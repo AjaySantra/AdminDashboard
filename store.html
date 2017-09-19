@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Store - Tru2Specs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>
+                <a class="brand" href="dashboard.html">Store - Tru2Specs</a>
+                <div class="nav-collapse">
+                        <ul class="nav pull-right">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                    class="icon-reorder "></i> Details <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dashboard.html">Dashboard Details</a></li>
+                                    <li><a href="customer.html">Customer Details</a></li>
+                                    <li><a href="seller.html">Seller Details</a></li>
+                                    <li><a href="store.html">Store Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="icon-cog"></i> Master <b class="caret"></b></a>
+    
+                                <ul class="dropdown-menu">
+                                    <li><a href="type.html">Type</a></li>
+                                    <li><a href="tagcategory.html">Tag Category</a></li>
+                                    <li><a href="brand.html">Brand</a></li>
+                                    <li><a href="frameshape.html">Frame Shape</a></li>
+                                    <li><a href="framesize.html">Frame Size</a></li>
+                                    <li><a href="frametype.html">Frame Type</a></li>
+                                    <li><a href="material.html">Material</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="icon-cog"></i> Account <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;">Settings</a></li>
+                                    <li><a href="javascript:;">Help</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
+                                class="icon-user"></i> Tru2Specs.com <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:;">Profile</a></li>
+                                    <li><a href="index.html">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+    
+                    </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /navbar-inner -->
+    </div>
+
+    <!-- /subnavbar -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="widget widget-nopad">
+                            <!-- <div class="widget-header">
+                                <h3>Seller Details</h3>
+                            </div> -->
+                            <div class="widget-content" style="min-height: 610px">
+                                <div class="big-stats-container">
+                                    <div class="controls">
+                                        <div class="accordion" id="accordion2">
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                    Basic Information
+                                                  </a>
+                                                </div>
+                                                <div id="collapseOne" class="accordion-body collapse in">
+                                                    <div class="accordion-inner">
+                                                        <table style="width: 100%">
+                                                            <tr>
+
+                                                                <td style="width: 10%">
+                                                                    <label class="control-label" for="seller">Seller Name* </label>
+                                                                </td>
+                                                                <td style="width: 30%">
+                                                                        <select id="ddlRejectCat" class="form-control biginput" style="width: 100%; margin-bottom: 9px! important;" onchange="CheckLCSubCat(this.value)">
+                                                                                <option value="0">Select</option>
+                                                                            </select>  </td>
+                                                                <td style="width: 5%"></td>
+                                                                <td style="width: 10%">
+                                                                   
+                                                                </td>
+                                                                <td style="width: 30%">
+                                                                </td>
+                                                                <td style="width: 20%"></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="firstname">First Name* </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="firstname" id="firstname" placeholder="First name..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="lastname">Last Name*</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="lastname" id="lastname" placeholder="Last name..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <label class="control-label" for="companyname">Company Name* </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="companyname" id="companyname" placeholder="Company name..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="lastname">Gender*</label>
+                                                                </td>
+                                                                <td>
+                                                                    <span style="float: left; width: 100%">
+                                                                                <input type="radio" name="gender" value="Male" id="rdomale" onchange="ToggalCategory(this.value)" />
+                                                                                Male
+                                                                     <input type="radio" name="gender" value="Female" id="rdofemale" onchange="ToggalCategory(this.value)" />
+                                                                                Female
+                                                                            </span>
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="emailid">Email Id.* </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="emailid" id="emailid" placeholder="Email Id..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="mobileno">Mobile No.*</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="mobileno" id="mobileno" placeholder="Mobile No..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="landlineno">Landline No. </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="landlineno" id="landlineno" placeholder="Landline No..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label class="control-label" for="customercare">Customer Care. </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="customercare" id="customercare" placeholder="Customer Care No..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                                    Address Information
+                                                  </a>
+                                                </div>
+                                                <div id="collapseTwo" class="accordion-body collapse">
+                                                    <div class="accordion-inner">
+                                                        <table style="width: 100%">
+                                                            <tr>
+                                                                <td style="width: 10%">
+                                                                    <label class="control-label" for="addressline1">Address Line 1 </label>
+                                                                </td>
+                                                                <td style="width: 30%">
+                                                                    <input class="form-control biginput" name="addressline1" id="addressline1" placeholder="Address Line1..." type="text">
+                                                                </td>
+                                                                <td style="width: 5%"></td>
+                                                                <td style="width: 10%">
+                                                                    <label for="lastname" for="addressline2">Address Line 2</label>
+                                                                </td>
+                                                                <td style="width: 30%">
+                                                                    <input class="form-control biginput" name="addressline2" id="addressline2" placeholder="Address Line2..." type="text">
+                                                                </td>
+                                                                <td style="width: 20%"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <label class="control-label" for="addressline3">Address Line 3</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="addressline3" id="addressline3" placeholder="Address Line3..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="landmark">Landmark</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="landmark" id="landmark" placeholder="Landmark..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="state">State </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="state" id="state" placeholder="State..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="city">City</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="city" id="city" placeholder="City..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="pincode">Pin Code</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="pincode" id="pincode" placeholder="Pin Code..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="country">Country</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="country" id="country" placeholder="Country..." type="text">
+                                                                </td>
+                                                                <td></td>
+
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td>
+                                                                    <label class="control-label" for="phonenumber1">Phone Number 1 </label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="phonenumber1" id="phonenumber1" placeholder="Phone Number1..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <label for="lastname" for="phonenumber2">Phone Number 2</label>
+                                                                </td>
+                                                                <td>
+                                                                    <input class="form-control biginput" name="phonenumber2" id="phonenumber2" placeholder="Phone Number2..." type="text">
+                                                                </td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                        <div style="margin-top: 20px"> 
+                                                                <button class="btn btn-primary" type="button" onclick="SaveBoxDetails('true')" id="btnManualSR">    Submit   </button>
+                                                                <button class="btn" type="button" onclick="SaveBoxDetails('true')" id="btnManualSR">    Reset   </button>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /controls -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main-inner -->
+    </div>
+    <!-- /main -->
+
+    <!-- /extra -->
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12"> &copy; 2017 <a href="dashboard.html">Tru2Specs : Admin Dashboard</a>. </div>
+                    <!-- /span12 -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /footer-inner -->
+    </div>
+    <!-- /footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
