@@ -1,0 +1,63 @@
+ <!-- /subnavbar -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="widget widget-nopad">
+                            <!-- <div class="widget-header">
+                                <h3>Seller Details</h3>
+                            </div> -->
+                            <div class="widget-content" style="min-height: 610px">
+                                <div class="big-stats-container">
+                                    <div class="controls">
+                                        <div class="accordion" id="accordion2">
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                        Details Entry
+                                                    </a>
+                                                </div>
+                                                <div id="collapseOne" class="accordion-body collapse in">
+                                                    <div class="accordion-inner accordioninner">
+                                                        <table id="gvCustomerDetails" style="width: 100%" class="table-bordered table table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>ID</th>
+                                                                    <th>CustomerId</th>
+                                                                    <th>UserId</th>
+                                                                    <th>FirstName</th>
+                                                                    <th>LastName</th>
+                                                                    <th>ContactNo</th>
+                                                                    <th>Gender</th>
+                                                                    <th>DOB</th>
+                                                                    <th>ReferralCode</th>
+                                                                    <th>MyReferral</th>
+                                                                    <th>MaritalStatus</th>
+                                                                    <th>ReferedBy</th>
+                                                                    <th>CreatedBy</th>
+                                                                    <th>CreatedDate</th>
+                                                                    <th>ModifyBy</th>
+                                                                    <th>ModifyDate</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            </tbody>
+                                                        </table>
+                                                        <div id="btnrowList"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /controls -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main-inner -->
+    </div>
+    <!-- /main -->

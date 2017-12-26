@@ -16,58 +16,8 @@
 </head>
 
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
-                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>
-                <a class="brand" href="index.html">Dashboard - Tru2Specs</a>
-                <div class="nav-collapse">
-                    <ul class="nav pull-right">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                    class="icon-reorder "></i> Details <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="dashboard.html">Dashboard Details</a></li>
-                                <li><a href="customer.html">Customer Details</a></li>
-                                <li><a href="seller.html">Seller Details</a></li>
-                                <li><a href="store.html">Store Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="icon-cog"></i> Master <b class="caret"></b></a>
+    <div class="navbar navbar-fixed-top" id="divmenu">
 
-                            <ul class="dropdown-menu">
-                                <li><a href="type.html">Type</a></li>
-                                <li><a href="tagcategory.html">Tag Category</a></li>
-                                <li><a href="brand.html">Brand</a></li>
-                                <li><a href="frameshape.html">Frame Shape</a></li>
-                                <li><a href="framesize.html">Frame Size</a></li>
-                                <li><a href="frametype.html">Frame Type</a></li>
-                                <li><a href="material.html">Material</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="icon-cog"></i> Account <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:;">Settings</a></li>
-                                <li><a href="javascript:;">Help</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="icon-user"></i> Tru2Specs.com <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:;">Profile</a></li>
-                                <li><a href="index.html">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /navbar-inner -->
     </div>
 
     <!-- /subnavbar -->
@@ -77,7 +27,8 @@
                 <div class="row">
                     <div class="span6">
                         <div class="widget widget-nopad">
-                            <div class="widget-header"> <i class="icon-list-alt"></i>
+                            <div class="widget-header">
+                                <i class="icon-list-alt"></i>
                                 <h3> Today's Stats</h3>
                             </div>
                             <!-- /widget-header -->
@@ -85,16 +36,28 @@
                                 <div class="widget big-stats-container">
                                     <div class="widget-content">
                                         <div id="big_stats" class="cf">
-                                            <div class="stat"> Products <i class="icon-list-alt"></i> <span class="value">50</span> </div>
+                                            <div class="stat"> Products
+                                                <i class="icon-list-alt"></i>
+                                                <span class="value">50</span>
+                                            </div>
                                             <!-- .stat -->
 
-                                            <div class="stat"> Customer<i class="icon-user"></i> <span class="value">22</span> </div>
+                                            <div class="stat"> Customer
+                                                <i class="icon-user"></i>
+                                                <span class="value">22</span>
+                                            </div>
                                             <!-- .stat -->
 
-                                            <div class="stat"> Seller <i class="icon-briefcase"></i> <span class="value">7</span> </div>
+                                            <div class="stat"> Seller
+                                                <i class="icon-briefcase"></i>
+                                                <span class="value">7</span>
+                                            </div>
                                             <!-- .stat -->
 
-                                            <div class="stat"> Store <i class="icon-home"></i> <span class="value">9</span> </div>
+                                            <div class="stat"> Store
+                                                <i class="icon-home"></i>
+                                                <span class="value">9</span>
+                                            </div>
                                             <!-- .stat -->
 
 
@@ -107,22 +70,40 @@
                         </div>
 
                         <div class="widget">
-                            <div class="widget-header"> <i class="icon-file"></i>
+                            <div class="widget-header">
+                                <i class="icon-file"></i>
                                 <h3> Comments</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
                                 <ul class="messages_layout">
-                                    <li class="from_user left"> <a href="#" class="avatar"><img src="img/male.png"/></a>
-                                        <div class="message_wrap"> <span class="arrow"></span>
-                                            <div class="info"> <a class="name">John Smith</a> <span class="time">1 hour ago</span>
+                                    <li class="from_user left">
+                                        <a href="#" class="avatar">
+                                            <img src="img/male.png" />
+                                        </a>
+                                        <div class="message_wrap">
+                                            <span class="arrow"></span>
+                                            <div class="info">
+                                                <a class="name">John Smith</a>
+                                                <span class="time">1 hour ago</span>
                                                 <div class="options_arrow">
-                                                    <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown"
-                                                            data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                                                    <div class="dropdown pull-right">
+                                                        <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                                            <i class=" icon-caret-down"></i>
+                                                        </a>
                                                         <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                                                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                                                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                                                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share-alt icon-large"></i> Reply</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-trash icon-large"></i> Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share icon-large"></i> Share</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -132,16 +113,33 @@
                                                 Love them! </div>
                                         </div>
                                     </li>
-                                    <li class="by_myself right"> <a href="#" class="avatar"><img src="img/female.png"/></a>
-                                        <div class="message_wrap"> <span class="arrow"></span>
-                                            <div class="info"> <a class="name">Tina (myself) </a> <span class="time">4 hours ago</span>
+                                    <li class="by_myself right">
+                                        <a href="#" class="avatar">
+                                            <img src="img/female.png" />
+                                        </a>
+                                        <div class="message_wrap">
+                                            <span class="arrow"></span>
+                                            <div class="info">
+                                                <a class="name">Tina (myself) </a>
+                                                <span class="time">4 hours ago</span>
                                                 <div class="options_arrow">
-                                                    <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown"
-                                                            data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                                                    <div class="dropdown pull-right">
+                                                        <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                                            <i class=" icon-caret-down"></i>
+                                                        </a>
                                                         <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                                                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                                                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                                                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share-alt icon-large"></i> Reply</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-trash icon-large"></i> Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share icon-large"></i> Share</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -151,16 +149,33 @@
                                                 purchasing this product. </div>
                                         </div>
                                     </li>
-                                    <li class="from_user left"> <a href="#" class="avatar"><img src="img/female.png"/></a>
-                                        <div class="message_wrap"> <span class="arrow"></span>
-                                            <div class="info"> <a class="name">Ginny Weasley </a> <span class="time">1 Day ago</span>
+                                    <li class="from_user left">
+                                        <a href="#" class="avatar">
+                                            <img src="img/female.png" />
+                                        </a>
+                                        <div class="message_wrap">
+                                            <span class="arrow"></span>
+                                            <div class="info">
+                                                <a class="name">Ginny Weasley </a>
+                                                <span class="time">1 Day ago</span>
                                                 <div class="options_arrow">
-                                                    <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown"
-                                                            data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                                                    <div class="dropdown pull-right">
+                                                        <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                                            <i class=" icon-caret-down"></i>
+                                                        </a>
                                                         <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                                                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                                                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                                                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share-alt icon-large"></i> Reply</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-trash icon-large"></i> Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share icon-large"></i> Share</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -171,16 +186,33 @@
                                                 metal and plastic. Otherwise an excellent product. </div>
                                         </div>
                                     </li>
-                                    <li class="from_user left"> <a href="#" class="avatar"><img src="img/male.png"/></a>
-                                        <div class="message_wrap"> <span class="arrow"></span>
-                                            <div class="info"> <a class="name">Mark Jobs </a> <span class="time">2 Days ago</span>
+                                    <li class="from_user left">
+                                        <a href="#" class="avatar">
+                                            <img src="img/male.png" />
+                                        </a>
+                                        <div class="message_wrap">
+                                            <span class="arrow"></span>
+                                            <div class="info">
+                                                <a class="name">Mark Jobs </a>
+                                                <span class="time">2 Days ago</span>
                                                 <div class="options_arrow">
-                                                    <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown"
-                                                            data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                                                    <div class="dropdown pull-right">
+                                                        <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                                            <i class=" icon-caret-down"></i>
+                                                        </a>
                                                         <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                                                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                                                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                                                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share-alt icon-large"></i> Reply</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-trash icon-large"></i> Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share icon-large"></i> Share</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -189,16 +221,33 @@
                                                 comfortable </div>
                                         </div>
                                     </li>
-                                    <li class="by_myself right"> <a href="#" class="avatar"><img src="img/female.png"/></a>
-                                        <div class="message_wrap"> <span class="arrow"></span>
-                                            <div class="info"> <a class="name">Tina (myself) </a> <span class="time">4 hours ago</span>
+                                    <li class="by_myself right">
+                                        <a href="#" class="avatar">
+                                            <img src="img/female.png" />
+                                        </a>
+                                        <div class="message_wrap">
+                                            <span class="arrow"></span>
+                                            <div class="info">
+                                                <a class="name">Tina (myself) </a>
+                                                <span class="time">4 hours ago</span>
                                                 <div class="options_arrow">
-                                                    <div class="dropdown pull-right"> <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown"
-                                                            data-target="#" href="#"> <i class=" icon-caret-down"></i> </a>
+                                                    <div class="dropdown pull-right">
+                                                        <a class="dropdown-toggle " id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                                                            <i class=" icon-caret-down"></i>
+                                                        </a>
                                                         <ul class="dropdown-menu " role="menu" aria-labelledby="dLabel">
-                                                            <li><a href="#"><i class=" icon-share-alt icon-large"></i> Reply</a></li>
-                                                            <li><a href="#"><i class=" icon-trash icon-large"></i> Delete</a></li>
-                                                            <li><a href="#"><i class=" icon-share icon-large"></i> Share</a></li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share-alt icon-large"></i> Reply</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-trash icon-large"></i> Delete</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#">
+                                                                    <i class=" icon-share icon-large"></i> Share</a>
+                                                            </li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -215,21 +264,45 @@
                     <!-- /span6 -->
                     <div class="span6">
                         <div class="widget">
-                            <div class="widget-header"> <i class="icon-bookmark"></i>
+                            <div class="widget-header">
+                                <i class="icon-bookmark"></i>
                                 <h3>Important Shortcuts</h3>
                             </div>
                             <!-- /widget-header -->
                             <div class="widget-content">
                                 <div class="shortcuts">
-                                    <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-list-alt"></i><span class="shortcut-label">Products</span> </a>
-                                    <a href="seller.html" class="shortcut"><i class="shortcut-icon  icon-briefcase"></i><span class="shortcut-label">Seller</span> </a>
-                                    <a href="store.html" class="shortcut"><i class="shortcut-icon icon-home"></i><span class="shortcut-label">Store</span>  
-                                    <a href="customer.html" class="shortcut"><i class="shortcut-icon icon-user"></i><span class="shortcut-label">Customer</span>                                            </a>
+                                    <a href="javascript:;" class="shortcut">
+                                        <i class="shortcut-icon icon-list-alt"></i>
+                                        <span class="shortcut-label">Products</span>
                                     </a>
-                                    <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Reports</span>                                        </a>
-                                    <a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">Comments</span>                                        </a>
-                                    <a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Photos</span>                                                </a>
-                                    <a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">Tags</span>                                                </a>
+                                    <a href="seller.html" class="shortcut">
+                                        <i class="shortcut-icon  icon-briefcase"></i>
+                                        <span class="shortcut-label">Seller</span>
+                                    </a>
+                                    <a href="store.html" class="shortcut">
+                                        <i class="shortcut-icon icon-home"></i>
+                                        <span class="shortcut-label">Store</span>
+                                        <a href="customer.html" class="shortcut">
+                                            <i class="shortcut-icon icon-user"></i>
+                                            <span class="shortcut-label">Customer</span>
+                                        </a>
+                                    </a>
+                                    <a href="javascript:;" class="shortcut">
+                                        <i class="shortcut-icon icon-signal"></i>
+                                        <span class="shortcut-label">Reports</span>
+                                    </a>
+                                    <a href="javascript:;" class="shortcut">
+                                        <i class="shortcut-icon icon-comment"></i>
+                                        <span class="shortcut-label">Comments</span>
+                                    </a>
+                                    <a href="javascript:;" class="shortcut">
+                                        <i class="shortcut-icon icon-picture"></i>
+                                        <span class="shortcut-label">Photos</span>
+                                    </a>
+                                    <a href="javascript:;" class="shortcut">
+                                        <i class="shortcut-icon icon-tag"></i>
+                                        <span class="shortcut-label">Tags</span>
+                                    </a>
                                 </div>
                                 <!-- /shortcuts -->
                             </div>
@@ -238,7 +311,8 @@
                         <!-- /widget -->
                         <!-- /widget -->
                         <div class="widget">
-                            <div class="widget-header"> <i class="icon-signal"></i>
+                            <div class="widget-header">
+                                <i class="icon-signal"></i>
                                 <h3> Sale Chart</h3>
                             </div>
                             <!-- /widget-header -->
@@ -251,7 +325,8 @@
                         <!-- /widget -->
 
                         <div class="widget widget-nopad">
-                            <div class="widget-header"> <i class="icon-list-alt"></i>
+                            <div class="widget-header">
+                                <i class="icon-list-alt"></i>
                                 <h3> Recent News</h3>
                             </div>
                             <!-- /widget-header -->
@@ -259,8 +334,12 @@
                                 <ul class="news-items">
                                     <li>
 
-                                        <div class="news-item-date"> <span class="news-item-day">08</span> <span class="news-item-month">Sep</span> </div>
-                                        <div class="news-item-detail"> <a href="dashboard.html" class="news-item-title" target="_blank">Smaller frames + Shorter haircuts</a>
+                                        <div class="news-item-date">
+                                            <span class="news-item-day">08</span>
+                                            <span class="news-item-month">Sep</span>
+                                        </div>
+                                        <div class="news-item-detail">
+                                            <a href="dashboard.html" class="news-item-title" target="_blank">Smaller frames + Shorter haircuts</a>
                                             <p class="news-item-preview"> Did you know wearing small frames with long hair is a major fashion faux paus?
                                                 This combination makes your face ...
                                             </p>
@@ -269,8 +348,12 @@
                                     </li>
                                     <li>
 
-                                        <div class="news-item-date"> <span class="news-item-day">05</span> <span class="news-item-month">Sep</span> </div>
-                                        <div class="news-item-detail"> <a href="#" class="news-item-title" target="_blank">Wide frames + Textured and height</a>
+                                        <div class="news-item-date">
+                                            <span class="news-item-day">05</span>
+                                            <span class="news-item-month">Sep</span>
+                                        </div>
+                                        <div class="news-item-detail">
+                                            <a href="#" class="news-item-title" target="_blank">Wide frames + Textured and height</a>
                                             <p class="news-item-preview"> Wide frames draw a lot of attention to the sides of your head, so steer clear
                                                 of a hairstyle that adds ...</p>
                                         </div>
@@ -278,8 +361,12 @@
                                     </li>
                                     <li>
 
-                                        <div class="news-item-date"> <span class="news-item-day">29</span> <span class="news-item-month">Aug</span> </div>
-                                        <div class="news-item-detail"> <a href="#" class="news-item-title" target="_blank">Oversized frames + Well-balanced hairstyle</a>
+                                        <div class="news-item-date">
+                                            <span class="news-item-day">29</span>
+                                            <span class="news-item-month">Aug</span>
+                                        </div>
+                                        <div class="news-item-detail">
+                                            <a href="#" class="news-item-title" target="_blank">Oversized frames + Well-balanced hairstyle</a>
                                             <p class="news-item-preview"> Now there’s a thing with oversized frames, you cannot go too short on hair with
                                                 them, neither can you sport ...</p>
                                         </div>
@@ -287,8 +374,12 @@
                                     </li>
                                     <li>
 
-                                        <div class="news-item-date"> <span class="news-item-day">23</span> <span class="news-item-month">Aug</span> </div>
-                                        <div class="news-item-detail"> <a href="#" class="news-item-title" target="_blank">Sleek frames + Undercut</a>
+                                        <div class="news-item-date">
+                                            <span class="news-item-day">23</span>
+                                            <span class="news-item-month">Aug</span>
+                                        </div>
+                                        <div class="news-item-detail">
+                                            <a href="#" class="news-item-title" target="_blank">Sleek frames + Undercut</a>
                                             <p class="news-item-preview"> If there’s one hairstyle that just refuses to go out of style, it is the famous
                                                 Undercut. If you sport undercut, ...</p>
                                         </div>
@@ -296,8 +387,12 @@
                                     </li>
                                     <li>
 
-                                        <div class="news-item-date"> <span class="news-item-day">15</span> <span class="news-item-month">Aug</span> </div>
-                                        <div class="news-item-detail"> <a href="#" class="news-item-title" target="_blank">Long hair + Large glasses</a>
+                                        <div class="news-item-date">
+                                            <span class="news-item-day">15</span>
+                                            <span class="news-item-month">Aug</span>
+                                        </div>
+                                        <div class="news-item-detail">
+                                            <a href="#" class="news-item-title" target="_blank">Long hair + Large glasses</a>
                                             <p class="news-item-preview"> If you sport a long haircut, get large glasses to get the official thumbs-up
                                                 from style gurus....</p>
                                         </div>
@@ -324,7 +419,8 @@
         <div class="footer-inner">
             <div class="container">
                 <div class="row">
-                    <div class="span12"> &copy; 2017 <a href="http://www.egrappler.com/">Tru2Specs : Admin Dashboard</a>. </div>
+                    <div class="span12"> &copy; 2017
+                        <a href="http://www.egrappler.com/">Tru2Specs : Admin Dashboard</a>. </div>
                     <!-- /span12 -->
                 </div>
                 <!-- /row -->
@@ -340,6 +436,8 @@
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/excanvas.min.js"></script>
     <script src="js/chart.min.js" type="text/javascript"></script>
+    <script src="customjs/baseobject.1.0.1.js" type="text/javascript"></script>
+
     <script src="js/bootstrap.js"></script>
 
     <script>
@@ -391,6 +489,8 @@
 
         }
 
+
+    $("#divmenu").load("menumaster.html");
     </script>
 
 

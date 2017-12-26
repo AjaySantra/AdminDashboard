@@ -2942,12 +2942,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endCo
 }
 .modal {
 	position: fixed;
-	top: 50%;
-	left: 50%;
+	top: 10%;
+	left: 30%;
 	z-index: 1050;
 	overflow: auto;
-	width: 560px;
-	margin: -250px 0 0 -280px;
+	width: 1080px;
+	margin: -300px 0 0 -280px;
 	background-color: #ffffff;
 	border: 1px solid #999;
 	border: 1px solid rgba(0, 0, 0, 0.3);

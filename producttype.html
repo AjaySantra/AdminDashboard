@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Type - Tru2Specs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="navbar navbar-fixed-top" id="divmenu">
+                
+                    </div>
+
+
+    <!-- /subnavbar -->
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <div class="widget widget-nopad">
+                            <div class="widget-header">
+                                <i class="icon-cog"></i>
+                                <h3>Product Type Master</h3>
+                            </div>
+                            <div class="widget-content" style="min-height: 580px ; padding: 10px 10px 0 10px; ">
+
+                                <div class="big-stats-container">
+                                    <div class="controls">
+                                        <div class="tabbable">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#formcontrols" data-toggle="tab">Details Entry</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#jscontrols" data-toggle="tab">Details Views</a>
+                                                </li>
+                                            </ul>
+
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="formcontrols">
+
+                                                    <table style="width: 100%">
+                                                        <tr>
+
+                                                            <td style="width: 10%">
+                                                                <label class="control-label" for="producttype">Product Type* </label>
+                                                            </td>
+                                                            <td style="width: 30%">
+                                                                <input class="form-control biginput" name="producttype" id="producttype" placeholder="Product Type..." type="text">
+                                                            </td>
+                                                            <!-- <td style="width: 5%"></td> -->
+                                                            <td style="width: 30%">
+                                                                <button class="btn  btn-primary" type="button" onclick="Add()" id="btnAdd"> Create </button>
+                                                                <button class="btn" type="button" onclick="Reset()" id="btnReset"> Reset </button>
+                                                            </td>
+                                                            <td style="width: 10%">
+
+                                                            </td>
+                                                            <td style="width: 20%"></td>
+                                                        </tr>
+                                                    </table>
+
+                                                </div>
+
+                                                <div class="tab-pane " id="jscontrols" style="overflow: auto !important">
+                                                    <table style="width: 100%" id='gvDetailsList' class="table-bordered table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sl.No</th>
+                                                                <th>Product Type</th>
+                                                                <th>Created By</th>
+                                                                <th>Created Date</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="btnrowList"></div>
+                                                    <input type="hidden" id="createdby" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /controls -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /main-inner -->
+    </div>
+    <!-- /main -->
+
+    <!-- /extra -->
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12"> &copy; 2017
+                        <a href="dashboard.html">Tru2Specs : Admin Dashboard</a>. </div>
+                    <!-- /span12 -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /footer-inner -->
+    </div>
+    <!-- /footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/loadingoverlay.js" type="text/javascript"></script>
+    <script src="js/jquery.toaster.js" type="text/javascript"></script>
+    <script src="js/loadingoverlay.min.js" type="text/javascript"></script>
+    <script src="customjs/baseobject.1.0.1.js" type="text/javascript"></script>
+
+    <script src="customjs/producttype.1.0.1.js" type="text/javascript"></script>
+</body>
+
+</html>

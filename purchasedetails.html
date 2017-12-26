@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Purchase : Tru2Specs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/pages/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+        <div class="navbar navbar-fixed-top" id="divmenu">
+                
+                    </div>
+    <!-- /subnavbar -->
+
+    <!-- /subnavbar -->
+    <div class="main">
+        <div class="main-inner">
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="span12"> -->
+            <div class="widget widget-nopad">
+                <div class="widget-header">
+                    <i class="icon-shopping-cart"></i>
+                    <h3>Purachase </h3>
+                </div>
+                <div class="widget-content" style="min-height: 580px ; padding: 10px 10px 0 10px; ">
+                    <div class="big-stats-container">
+                        <div class="controls">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#formcontrols" data-toggle="tab">Purchase Details</a>
+                                    </li>
+                                    <!-- <li>
+                                        <a href="#jscontrols" data-toggle="tab">Details Views</a>
+                                    </li> -->
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="formcontrols">
+
+                                        <table id="gvDetailsList" style="width: 100%" class="table-bordered table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Sl.No</th>
+                                                    <th>POID</th>
+                                                    <th>OrderNo</th>
+                                                    <th>OrderDate</th>
+                                                    <th>Total Amount</th>
+                                                    <th>CustomerName</th>
+                                                    <th>Address</th>
+                                                    <th>Phone No</th>
+                                                    <th>Status</th>
+                                                    <th>Product Name</th>
+                                                    <th>Created By</th>
+                                                    <th>Created Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                        <div id="btnrowList"></div>
+
+                                        <input type="hidden" id="sellerid" />
+                                        <input type="hidden" id="createdby" />
+                                    </div>
+                                    <div class="tab-pane " id="jscontrols" style="overflow: auto !important">
+                                        <div style="overflow: auto !important;width: 83% ! important">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /controls -->
+                    </div>
+                </div>
+            </div>
+            <!-- </div>
+                </div>
+            </div> -->
+
+            <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 id="myModalLabel">Order Details:</h4>
+                </div>
+
+                <div class="modal-body" style="height: 210mm; width: 97%; margin: 0;" id="divLPNDetailsPrint">
+                    <table cellpadding="2px" cellspacing="10" border="1" id="ShowPrint" style="width: 100%; border-width: 1px;">
+                        <tr>
+                            <td>
+                                <b>Order No :</b>
+                            </td>
+                            <td>
+                                <label id="orderno">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Order Date :</b>
+                            </td>
+                            <td>
+                                <label id="orderdate">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Order Status</b>
+                            </td>
+                            <td>
+                                <label id="orderstatus">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Customer Name :</b>
+                            </td>
+                            <td>
+                                <label id="customername">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Phone No :</b>
+                            </td>
+                            <td>
+                                <label id="phoneno">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Eamil Id:</b>
+                            </td>
+                            <td>
+                                <label id="emailid">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Total Amount :</b>
+                            </td>
+                            <td>
+                                <label id="totalamount">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Tax Amount :</b>
+                            </td>
+                            <td>
+                                <label id="txtamount">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Total Qty:</b>
+                            </td>
+                            <td>
+                                <label id="totalqty">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Payment Type :</b>
+                            </td>
+                            <td>
+                                <label id="paymenttype">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Grand Total :</b>
+                            </td>
+                            <td>
+                                <label id="grandtotal">
+                                </label>
+                            </td>
+                            <td>
+                                <b>Discount Amount</b>
+                            </td>
+                            <td>
+                                <label id="discountamount">
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Shipping Address :</b>
+                            </td>
+                            <td>
+                                <label id="shipaddress">
+                                </label>
+
+                            </td>
+                            <td>
+                                <b>Comments :</b>
+                            </td>
+                            <td>
+                                <label id="comments">
+                                </label>
+                            </td>
+                            <td>
+                                <b>FullFill Store :</b>
+                            </td>
+                            <td>
+                                <label id="storename">
+                                </label>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div id="divLPNPrint" style="overflow:auto;">
+
+                        <table id="gvdetailsTable" class="table-bordered table table-hover" style="width: 100%; border-width: 1px; margin-top: 10px;">
+                            <thead>
+                                <tr>
+                                    <th>Sl. No.</th>
+                                    <th>Product ID</th>
+                                    <th>Product Name</th>
+                                    <th>Product Desc</th>
+                                    <th>Model No</th>
+                                    <th>Brand</th>
+                                    <th>FrameShapeName</th>
+                                    <th>FrameSize</th>
+                                    <th>FrameStyle</th>
+                                    <th>FrameType</th>
+                                    <th>ProductType</th>
+                                    <th>Frame Color</th>
+                                    <th>MRP</th>
+                                    <th>DiscountType</th>
+                                    <th>DiscountPercentage</th>
+                                    <th>DiscountAmount</th>
+                                    <th>OfferMRP</th>
+                                    <th>BaseCost</th>
+                                    <th>Quanity</th>
+                                    <th>ItemStatus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div id="btnrowList1"></div>
+
+
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <span style="float: left; margin-left: 10px;">
+                        <b>Total No Records :</b>
+                        <label id="lbltotalDetails" style="display: inline;">2</label>
+                    </span>
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                    <!-- <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Print</button> -->
+                </div>
+            </div>
+        </div>
+        <!-- /main-inner -->
+    </div>
+    <!-- /main -->
+
+    <!-- /extra -->
+    <div class="footer">
+        <div class="footer-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="span12"> &copy; 2017
+                        <a href="dashboard.html"></a>Tru2Specs : Admin Dashboard</a>. </div>
+                    <!-- /span12 -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /footer-inner -->
+    </div>
+    <!-- /footer -->
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/loadingoverlay.js" type="text/javascript"></script>
+    <script src="js/jquery.toaster.js" type="text/javascript"></script>
+    <script src="js/loadingoverlay.min.js" type="text/javascript"></script>
+    <script src="customjs/baseobject.1.0.1.js" type="text/javascript"></script>
+
+    <script src="customjs/purchase.1.0.1.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -16,59 +16,9 @@
 </head>
 
 <body>
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
-                    class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span> </a>
-                <a class="brand" href="dashboard.html">Frame Shape - Tru2Specs</a>
-                <div class="nav-collapse">
-                    <ul class="nav pull-right">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                                class="icon-reorder "></i> Details <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="dashboard.html">Dashboard Details</a></li>
-                                <li><a href="customer.html">Customer Details</a></li>
-                                <li><a href="seller.html">Seller Details</a></li>
-                                <li><a href="store.html">Store Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                            class="icon-cog"></i> Master <b class="caret"></b></a>
-
-                            <ul class="dropdown-menu">
-                                <li><a href="type.html">Type</a></li>
-                                <li><a href="tagcategory.html">Tag Category</a></li>
-                                <li><a href="brand.html">Brand</a></li>
-                                <li><a href="frameshape.html">Frame Shape</a></li>
-                                <li><a href="framesize.html">Frame Size</a></li>
-                                <li><a href="frametype.html">Frame Type</a></li>
-                                <li><a href="material.html">Material</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                            class="icon-cog"></i> Account <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:;">Settings</a></li>
-                                <li><a href="javascript:;">Help</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i
-                            class="icon-user"></i> Tru2Specs.com <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="javascript:;">Profile</a></li>
-                                <li><a href="index.html">Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-
-                </div>
-                <!--/.nav-collapse -->
-            </div>
-            <!-- /container -->
-        </div>
-        <!-- /navbar-inner -->
-    </div>
+        <div class="navbar navbar-fixed-top" id="divmenu">
+                
+                    </div>
 
     <!-- /subnavbar -->
     <div class="main">
@@ -77,62 +27,66 @@
                 <div class="row">
                     <div class="span12">
                         <div class="widget widget-nopad">
-                            <!-- <div class="widget-header">
-                                <h3>Seller Details</h3>
-                            </div> -->
-                            <div class="widget-content" style="min-height: 610px">
+                            <div class="widget-header">
+                                <i class="icon-cog"></i>
+                                <h3>Frame Shape Master</h3>
+                            </div>
+                            <div class="widget-content" style="min-height: 580px ; padding: 10px 10px 0 10px; ">
+
                                 <div class="big-stats-container">
                                     <div class="controls">
-                                        <div class="accordion" id="accordion2">
-                                            <div class="accordion-group">
-                                                <div class="accordion-heading">
-                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                                                   Details Entry
-                                                  </a>
-                                                </div>
-                                                <div id="collapseOne" class="accordion-body collapse in">
-                                                    <div class="accordion-inner">
-                                                        <table style="width: 100%">
-                                                            <tr>
+                                        <div class="tabbable">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#formcontrols" data-toggle="tab">Details Entry</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#jscontrols" data-toggle="tab">Details Views</a>
+                                                </li>
+                                            </ul>
 
-                                                                <td style="width: 10%">
-                                                                    <label class="control-label" for="frameshape">Frame Shape* </label>
-                                                                </td>
-                                                                <td style="width: 30%">
-                                                                    <input class="form-control biginput" name="frameshape" id="frameshape" placeholder="Frame Shape..." type="text">
-                                                                </td>
-                                                                <!-- <td style="width: 5%"></td> -->
-                                                                <td style="width: 30%">
-                                                                    <button class="btn  btn-primary" type="button" onclick="SaveBoxDetails('true')" id="btnManualSR">    Create   </button>
-                                                                    <button class="btn" type="button" onclick="SaveBoxDetails('true')" id="btnManualSR">    Reset   </button>
-                                                                </td>
-                                                                <td style="width: 10%">
-                                                                    
-                                                                </td>
-                                                                <td style="width: 20%"></td>
-                                                            </tr>
-                                                        </table>
-                                                    </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="formcontrols">
+
+                                                    <table style="width: 100%">
+                                                        <tr>
+
+                                                            <td style="width: 10%">
+                                                                <label class="control-label" for="frameshape">Frame Shape* </label>
+                                                            </td>
+                                                            <td style="width: 30%">
+                                                                <input class="form-control biginput" name="frameshape" id="frameshape" placeholder="Frame Shape..." type="text">
+                                                            </td>
+                                                            <!-- <td style="width: 5%"></td> -->
+                                                            <td style="width: 30%">
+                                                                <button class="btn  btn-primary" type="button" onclick="Add()" id="btnAdd"> Create </button>
+                                                                <button class="btn" type="button" onclick="Reset()" id="btnReset"> Reset </button>
+                                                            </td>
+                                                            <td style="width: 10%">
+
+                                                            </td>
+                                                            <td style="width: 20%"></td>
+                                                        </tr>
+                                                    </table>
+
                                                 </div>
-                                            </div>
-                                            <div class="accordion-group">
-                                                <div class="accordion-heading">
-                                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                                                    Details View
-                                                  </a>
-                                                </div>
-                                                <div id="collapseTwo" class="accordion-body collapse">
-                                                    <div class="accordion-inner">
-                                                        <table style="width: 100%" class="table-bordered table table-hover">
+
+                                                <div class="tab-pane " id="jscontrols" style="overflow: auto !important">
+                                                    <table style="width: 100%" id='gvDetailsList' class="table-bordered table table-hover">
+                                                        <thead>
                                                             <tr>
                                                                 <th>Sl.No</th>
-                                                                <th>Frame Shape Name</th>
+                                                                <th>Frame Shape</th>
                                                                 <th>Created By</th>
                                                                 <th>Created Date</th>
                                                             </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="btnrowList"></div>
 
-                                                        </table>
-                                                    </div>
+                                                    <input type="hidden" id="createdby" />
                                                 </div>
                                             </div>
                                         </div>
@@ -147,6 +101,7 @@
         </div>
         <!-- /main-inner -->
     </div>
+
     <!-- /main -->
 
     <!-- /extra -->
@@ -154,7 +109,8 @@
         <div class="footer-inner">
             <div class="container">
                 <div class="row">
-                    <div class="span12"> &copy; 2017 <a href="dashboard.html">Tru2Specs : Admin Dashboard</a>. </div>
+                    <div class="span12"> &copy; 2017
+                        <a href="dashboard.html">Tru2Specs : Admin Dashboard</a>. </div>
                     <!-- /span12 -->
                 </div>
                 <!-- /row -->
@@ -170,6 +126,13 @@
     <script src="js/jquery-1.7.2.min.js"></script>
 
     <script src="js/bootstrap.js"></script>
+
+    <script src="js/loadingoverlay.js" type="text/javascript"></script>
+    <script src="js/jquery.toaster.js" type="text/javascript"></script>
+    <script src="js/loadingoverlay.min.js" type="text/javascript"></script>
+    <script src="customjs/baseobject.1.0.1.js" type="text/javascript"></script>
+
+    <script src="customjs/frameshape.1.0.1.js" type="text/javascript"></script>
 </body>
 
 </html>
